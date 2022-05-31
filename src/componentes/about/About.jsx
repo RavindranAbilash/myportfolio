@@ -6,16 +6,19 @@ import {FaAward} from "react-icons/fa";
 import {FiUsers} from "react-icons/fi";
 import {VscFolderLibrary} from "react-icons/vsc";
 
+import Abilash4 from '../../assets/Abilash4.png'
+
 const About=()=>{
     return(
         <section id="about">
-            <h5>Get To Know</h5>
+            <div className="divider div-transparent"></div>
+            <h5 className="first__heading">Get To Know</h5>
             <h2>About Me</h2>
 
             <div className="container about__container">
                 <div className="about__me">
                 <div className="about__me-image">
-                    <img src={ME} alt="Abilash"/>
+                    <img src={Abilash4} alt="Abilash"/>
                 </div>
                 </div>
 
@@ -40,8 +43,13 @@ const About=()=>{
                 </div>
 
                 <p>
-                    is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1
-                    960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                    &emsp;I am currently doing my undergraduate degree under computing department of Faculty of engineering, University of Peradeniya.
+                    I am a passionate tech enthusiast and currently i engaged myself with some web based projects.
+                    I also got interest to develop apps and website through full stack web development using latest technologies.
+                    I hope to learn machine learning and passionate to join some AI project researches in near future.<br/><br/>&emsp;
+                    I love photography and editing which always keeps me refreshed.
+                    And also I am too much addicted with travelling which makes me to explore the world and sometimes myself.
+                    I am good at playing volley ball which keeps me physically strong.
                 </p>
                 <a href="contact" className="btn btn-primary">Let's Talk</a>
             </div>

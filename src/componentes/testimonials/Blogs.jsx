@@ -1,5 +1,5 @@
 import React from "react";
-import './Testimonials.css'
+import './Blogs.css'
 
 import Avatar1 from "../../assets/avatar1.jpg"
 import Avatar2 from "../../assets/avatar2.jpg"
@@ -19,31 +19,40 @@ import 'swiper/css/pagination';
 const data = [
     {
         avatar: Avatar1,
+        title: "Most popular Hooks in ReactJs",
         name: "Ravindran Abilash",
-        review:"imen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+        link: "medium.com",
+        review:"imen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum..."
     },
     {
         avatar: Avatar2,
+        title: "Most popular Hooks in ReactJs",
         name: "Ravindran Abilash",
+        link: "medium.com",
         review:"imen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
     },
     {
         avatar: Avatar3,
+        title: "Most popular Hooks in ReactJs",
         name: "Ravindran Abilash",
+        link: "medium.com",
         review:"imen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
     },
     {
         avatar: Avatar4,
+        title: "Most popular Hooks in ReactJs",
         name: "Ravindran Abilash",
+        link: "medium.com",
         review:"imen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
     }
 ]
 
-const Testimonials=()=>{
+const Blogs=()=>{
     return(
-        <section id="testimonials">
-            <h5>Review from Client</h5>
-            <h2>Testimonials</h2>
+        <section id="blogs">
+            <div className="divider div-transparent"></div>
+            <h5 className="first__heading__blogs">My Recent Blogs</h5>
+            <h2>Blogs</h2>
 
             <Swiper className="container testimonials_container"
                     modules={[Pagination]}
@@ -51,16 +60,18 @@ const Testimonials=()=>{
                     slidesPerView={1}
                     pagination={{ clickable: true }}>
                 {
-                    data.map(({avatar,name, review},index)=> {
+                    data.map(({avatar,title,name,link, review},index)=> {
                         return (
                             <SwiperSlide key={index} className="testimonial">
+                                <h2 style={{marginBottom:"1rem"}}>{title}</h2>
                                 <div className="client_avatar">
                                     <img src={avatar} alt="avatar one"/>
                                 </div>
-                                <h5 className="client__name">{name}</h5>
+                                <h5 className="client__name">Author : {name} </h5>
                                 <small className="client__review">
                                     {review}
                                 </small>
+                                <a style={{marginTop:"1rem"}} className="btn" href={link} target="_blank">See More</a>
                             </SwiperSlide>
                         )
                     })
@@ -72,4 +83,4 @@ const Testimonials=()=>{
     )
 }
 
-export default Testimonials;
+export default Blogs;

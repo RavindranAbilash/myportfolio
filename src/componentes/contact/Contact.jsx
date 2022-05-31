@@ -23,7 +23,10 @@ const Contact=()=>{
         e.target.reset();
     };
     return(
-        <section id="contact">
+        <section style={{height:"60vh"}} id="contact">
+            <div className="divider div-transparent"></div>
+            <h5 style={{marginTop:"1rem"}}>Do you like to talk</h5>
+            <h2>Contact</h2>
             <div className="container contact__container">
                 <div className="contact__options">
                     <article className="contact__option">

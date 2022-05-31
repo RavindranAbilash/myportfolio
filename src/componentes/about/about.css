@@ -2,7 +2,10 @@
     display: grid;
     grid-template-columns: 35% 35%;
     gap:15%;
+    height: 100vh;
 }
+
+
 
 .about__me {
     width: 100%;
@@ -11,11 +14,12 @@
     background: linear-gradient(
     45deg,
     transparent,
-    var(--color-primary),
+    var(--color-light),
     transparent
     );
     display: grid;
     place-items: center;
+    margin-top: 4rem;
 }
 
 .about__me-image{
@@ -23,6 +27,7 @@
     overflow: hidden;
     transform: rotate(10deg);
     transition: var(--transition);
+
 }
 
 .about__me-image:hover{

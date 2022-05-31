@@ -55,8 +55,9 @@ const data = [
 
 const Portfolio=()=>{
     return(
-        <section id="portfolio">
-            <h5>My recent Work</h5>
+        <section className="section__portfolio" id="portfolio">
+            <div className="divider div-transparent"></div>
+            <h5 className="first__heading">My recent Work</h5>
             <h2>Portfolio</h2>
 
             <div className="container portfolio__container">

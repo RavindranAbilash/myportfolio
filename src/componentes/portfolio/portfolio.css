@@ -1,3 +1,7 @@
+.section__portfolio{
+    height: 120vh;
+}
+
 .portfolio__container {
     display: grid;
     grid-template-columns: repeat(3,1fr);

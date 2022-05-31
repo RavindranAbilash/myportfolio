@@ -3,6 +3,10 @@
     padding-bottom: 4rem;
 }
 
+.first__heading__blogs{
+    margin-top: 8rem;
+}
+
 .swiper-pagination-clickable .swiper-pagination-bullet  {
     background: var(--color-primary);
 }
